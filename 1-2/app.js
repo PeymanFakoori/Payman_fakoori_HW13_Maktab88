@@ -13,6 +13,6 @@ app.get("/contact", (req, res) => {
 app.get("/", (req, res) => {
   res.send("Root Rout!");
 });
-app.get("*", (req, res) => res.send("Not Found!"));
+app.get("*", (req, res) => res.send("Page Not Found!"));
 
 app.listen(8000);
