@@ -7,7 +7,7 @@ app.get("/get-all-users", function (req, res) {
 });
 
 app.get("/admins", function (req, res) {
-  res.send(users.filter((user) => user.role === "admin"));
+  res.json(users.filter((user) => user.role === "admin"));
 });
 
 app.listen(8000);
